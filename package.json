@@ -1,0 +1,19 @@
+{
+  "name": "erc20-test",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "create": "graph create --node http://18.201.242.131:8020/ erc20-test",
+    "remove": "graph remove --node http://18.201.242.131:8020/ erc20-test",
+    "deploy": "graph deploy --node http://18.201.242.131:8020/ --ipfs http://18.201.242.131:5001 erc20-test",
+    "test": "graph test"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.70.0",
+    "@graphprotocol/graph-ts": "0.32.0"
+  },
+  "devDependencies": {
+    "matchstick-as": "0.5.0"
+  }
+}
